@@ -1,0 +1,15 @@
+AddDefaultCharset utf-8i
+php_flag  display_errors On
+php_flag short_open_tag on
+RewriteEngine on
+
+RewriteRule ^index\.php$ / [R=301,L]
+
+RewriteCond %{REQUEST_URI} !/phpmyadmin/
+RewriteCond %{REQUEST_URI} !/contents/
+RewriteCond %{REQUEST_URI} !/google4341ca443b1015ac.html
+RewriteCond %{REQUEST_URI} !/robots.txt
+RewriteCond %{REQUEST_URI} !/sitemap\.xml$
+RewriteCond $1 !^(index\.php|robots\.txt|static|blog|.+\.gif$|.+\.xml$|.+\.jpeg$|.+\.jpg$|.+\.png$|.+\.woff$|.+\.js$|.+\.txt$|google[a-z0-9]+\.html|tmp_image\/_temporary_.+$)
+RewriteRule ^(.*)$ /index.php/$1 [L]
+
