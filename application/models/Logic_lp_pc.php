@@ -17,7 +17,10 @@ class Logic_lp_pc Extends CI_Model{
                 $data[] = $param['phone_num'];
                 $data[] = $param['current_job_type'];
 		$data[] = $param['email'];
-		$data[] = $param['newsletter'];
+		if($param['newsletter'] == NULL){
+			$newsletter = 0;
+		}	
+		$data[] = $newsletter;
 
 		$sql=<<<EOF
 			INSERT INTO `user` (`fullname`, `furigana`, `date_of_birth`, `phone_num`, `current_job_type`, `email`, `newletter_flg`) VALUES (?,?,?,?,?,?,?);
