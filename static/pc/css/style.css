@@ -1,0 +1,303 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* base
+-----------------------------------------------*/
+/* ========== universal reset ========== */
+/* ========== base style ========== */
+/* ========== common tips ========== */
+/* ========== header ========== */
+/* index - beforeLogin
+-----------------------------------------------*/
+
+
+
+
+/* base
+-----------------------------------------------*/
+/* ========== universal reset ========== */
+/**
+* html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
+* Richard Clark (http://richclarkdesign.com)
+* http://cssreset.com
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+margin:0;
+padding:0;
+border:0;
+outline:0;
+font-size:100%;
+vertical-align:baseline;
+background:transparent;
+}
+body {
+line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+display:block;
+}
+nav ul {
+list-style:none;
+}
+blockquote, q {
+quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content:'';
+content:none;
+}
+a {
+margin:0;
+padding:0;
+font-size:100%;
+vertical-align:baseline;
+background:transparent;
+}
+
+/* ========== base style ========== */
+body{
+	background:url(../images/bg.png) #eeeeee no-repeat right top;
+	color:#555555;
+	font-size:12px;
+	font-family:"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+	font-weight:normal;
+	padding-bottom:60px;
+	border-bottom:30px solid #c01a26;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight:normal;
+}
+a:link,
+a:visited{
+	color:#2479d9;
+	text-decoration:none;
+}
+a:hover{
+	color:#5ca1ee;
+	text-decoration:none;
+}
+p,li,dt,dd,th,td{
+	line-height:140%;
+}
+ol,ul{
+	list-style:none;
+}
+img{
+	max-width:100%;
+	vertical-align:bottom;
+}
+strong{
+	font-weight:bold;	
+}
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+}
+th, td{
+	text-align:left;
+	font-weight:normal;
+}
+input, select{
+	vertical-align:middle;
+}
+textarea, input, select, button{
+	font-size:12px;
+	font-family:"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+	color:#555555;
+	border:1px solid #e2e2e2;
+	background:#ffffff;
+	padding:5px 10px;
+}
+
+/* header
+-----------------------------------------------*/
+header{
+	width:100%;
+	background:#ffffff;
+	border-top:17px solid #232323;
+	border-bottom:10px solid #ee4343;
+}
+header h1{
+	width:971px;
+	margin:0 auto;
+	padding:60px 0 15px 15px;
+	background:url(../images/logo.png) 15px 20px no-repeat;
+	color:#909090;
+	font-size:14px;
+}
+
+/* contents
+-----------------------------------------------*/
+.contents{
+	width:966px;
+	margin:55px auto 0;
+	padding:20px 10px 47px;
+	background:#fff;
+	filter: alpha(opacity=95);
+	-moz-opacity:0.95;
+	opacity:0.95;
+	box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+.contents h2{
+	padding:0 10px 17px;
+	font-size:20px;
+	color:#444444;
+	font-weight:bold;
+	border-bottom:1px solid #c6c6c6;
+}
+.contents .lead{
+	width:940px;
+	margin:20px auto 0;
+}
+.contents .lead dt,
+.contents .lead dd{
+	display:table-cell;
+	vertical-align:middle;
+}
+.contents .lead dd{
+	color:#333333;
+	font-size:15px;
+	padding-left:15px;
+}
+.contents .attention{
+	color:#d42929;
+}
+
+.contents .explain{
+	margin:20px 90px;
+}
+
+.contents table{
+	margin:0 auto 30px;
+}
+.contents table th{
+	padding-right:30px;
+	text-align:right;
+}
+.contents table th span{
+	color:#d42929;
+	font-size:11px;
+}
+.contents table th,
+.contents table td{
+	padding-top:15px;
+	padding-bottom:15px;
+	vertical-align:middle;
+}
+.contents table input{
+	background:#faf2f2;
+}
+.contents table select{
+	background:#f1f1f1;
+}
+
+.contents .table{
+	margin-top:20px;
+	padding-top:20px;
+	border-top:1px dotted #cbcbcb;
+}
+
+/* 姓名・フリガナ */
+.contents table .name01 td{
+	padding-left:1em;
+}
+.contents table .name01 input,
+.contents table .name02 input{
+	width:130px;
+	margin-left:10px;
+}
+.contents table .name01 input:first-child{
+	margin-right:2.5em;
+}
+.contents table .name02 input:first-child{
+	margin-right:1.5em;
+}
+
+/* 生年月日 */
+.contents table .birth input{
+	width:30px;
+	margin-right:5px;
+	margin-left:10px;
+}
+.contents table .birth input:first-child{
+	width:60px;
+	margin-left:0;
+}
+
+/* 性別 */
+.contents table .gender input{
+	margin-right:5px;
+	vertical-align:top;
+}
+.contents table .gender label:nth-child(2){
+	margin-left:45px;
+}
+
+/* 電話番号 */
+.contents table .tel input{
+	margin-top:5px;
+}
+
+/* 現在の職種 */
+.contents table .job select{
+	width:270px;
+}
+
+/* メールアドレス */
+.contents table .mail02 td input{
+	margin-top:5px;
+}
+
+/* キャリア情報メール */
+.contents table .dm th span{
+	color:#009fe8;
+}
+.contents table .dm input{
+	margin-bottom:15px;
+	vertical-align:top;
+}
+
+
+/* footer */
+footer{
+	padding-top:40px;
+	text-align:center;
+	border-top:1px dotted #cbcbcb;
+}
+footer p{
+	font-size:13px;
+	color:#333333;
+}
+footer .register button{
+	padding:5px 60px;
+	border:none;
+	border-radius:5px;
+	background:url(../images/bg_register.png) #555555 10% 50% no-repeat;
+	color:#ffffff;
+	font-size:18px;
+	font-weight:bold;
+	cursor:pointer;
+}
+footer .register button:hover{
+	background:url(../images/bg_register.png) #6c6c6c 11% 50% no-repeat;
+}
+
+/* footerlogo */
+
+.footerlogo{
+	text-align:center;
+	margin-top:40px;
+}

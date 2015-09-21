@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns#">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1">
+<meta name="keywords" content="LGBT,新宿2丁目,ゲイ,レズビアン,2chopo,にちょぽ">
+<meta name="description" content="日本最大級のLGBT情報サイト2CHOPO（にちょぽ）。W編集長バブリーナ・キムビアンカが世界有数のゲイタウン新宿2丁目から「LGBTをありのままで生きる」をテーマに情報を発信するポータルサイトです。">
+<!-- OG -->
+<meta property="og:title" content="新宿２丁目発！LGBTポータルサイト「2CHOPO（にちょぽ）」">
+<meta property="og:description" content="日本最大級のLGBT情報サイト2CHOPO（にちょぽ）。W編集長バブリーナ・キムビアンカが世界有数のゲイタウン新宿2丁目から「LGBTをありのままで生きる」をテーマに情報を発信するポータルサイトです。">
+<meta property="og:image" content="http://www.2chopo.com/common/img/ogimage.jpg">
+<!-- OG END -->
+<title>新宿２丁目発！LGBTポータルサイト「2CHOPO（にちょぽ）」</title>
+<link href="<?php echo base_url().'static/pc/css/style.css'?>" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+<header>
+<h1>ワイルドカード株式会社の転職エージェントサービス</h1>
+<!-- /header --></header>
+
+<div class="contents">
+<h2>無料会員登録</h2>
+<dl class="lead">
+<dt><img src="<?php echo base_url().'static/pc/images/ico01.png'?>"></dt>
+<dd>現在の職場でセクシュアリティを打ち明けようか悩んでいる、上司からのお見合い話を毎回交わすのも面倒・・・<br>こういった問題を抱えていませんか？</dd>
+</dl>
+<p class="explain"> 総合人材会社ネオキャリアグループ・ワイルドカード株式会社とLGBTポータルサイト「2CHOPO（にちょぽ）」が、業界初の【LGBT求職マッチングサービス】を開始します。LGBTについての知識と理解のある企業のみをご紹介しますので、多様性を尊重する価値観のある企業への就職が可能です。以下からワイルドカード株式会社の人材紹介サービス無料会員登録へお進みください。会員になりますとキャリアアドバイザーとの無料転職相談をご利用いただくことができます。</p>
+<!-- <form>-->
+<?php echo form_open(base_url().'pc/register'); ?>
+<div class="table">
+<table>
+<tr class="name01">
+<th>お名前<span>（必須）</span></th>
+<td>姓 <?php echo form_input(array('name'=>'fullname1','value'=>set_value('fullname1'))); ?>名 <?php echo form_input(array('name'=>'fullname2','value'=>set_value('fullname2'))); ?><br>
+<?php echo form_error('fullname1');?><br>
+<?php echo form_error('fullname2');?>
+</td>
+</tr>
+
+<tr class="name02">
+<th>フリガナ<span>（必須）</span></th>
+<td>セイ <?php echo form_input(array('name'=>'furigana1','value'=>set_value('furigana1'))); ?> メイ <?php echo form_input(array('name'=>'furigana2','value'=>set_value('furigana2'))); ?><br>
+<?php echo form_error('furigana1');?><br>
+<?php echo form_error('furigana2');?></td>
+</tr>
+
+<tr class="birth">
+<th>生年月日<span>（必須）</span></th>
+<td><?php echo form_input(array('name'=>'year','value'=>set_value('year'))); ?>年
+<?php echo form_input(array('name'=>'month','value'=>set_value('month'))); ?>月
+<?php echo form_input(array('name'=>'day','value'=>set_value('day'))); ?>日<br>
+<?php echo form_error('year');?> <br>
+<?php echo form_error('month');?> <br>
+<?php echo form_error('day');?></td>
+</tr>
+
+<tr class="tel">
+<th>電話番号<span>（必須）</span></th>
+<td><?php echo form_input(array('name'=>'phone_num','value'=>set_value('phone_num'))); ?><br>
+<?php echo form_error('phone_num');?></td>
+</tr>
+
+<tr class="job">
+<th>現在の職種<span>（必須）</span></th>
+<td><select name="current_job_type">
+    <option value="" selected="selected">選択してください</option>
+    <optgroup label="営業職">
+        <option value="個人営業" <?php echo set_select('current_job_type', '個人営業'); ?>>個人営業</option>
+        <option value="海外営業"  <?php echo set_select('current_job_type', '海外営業'); ?>>海外営業</option>
+        <option value="その他営業"  <?php echo set_select('current_job_type', 'その他営業'); ?>>その他営業</option>
+    </optgroup>
+    <optgroup label="事務系・マーケティング職種">
+        <option value="経理・財務・経営企画" <?php echo set_select('current_job_type', '経理・財務・経営企画'); ?>>経理・財務・経営企画</option>
+        <option value="総務" <?php echo set_select('current_job_type', '総務'); ?>>総務</option>
+        <option value="人事" <?php echo set_select('current_job_type', '人事'); ?>>人事</option>
+        <option value="法務・知財" <?php echo set_select('current_job_type', '法務・知財'); ?>>法務・知財</option>
+        <option value="広報・IR" <?php echo set_select('current_job_type', '広報・IR'); ?>>広報・IR</option>
+        <option value="マーケティング・商品企画" <?php echo set_select('current_job_type', 'マーケティング・商品企画'); ?>>マーケティング・商品企画</option>
+        <option value="アシスタント" <?php echo set_select('current_job_type', 'アシスタント'); ?>>アシスタント</option>
+    </optgroup>
+    <optgroup label="ITエンジニア/WEB系クリエイティブ職">
+        <option value="WEBディレクション系" <?php echo set_select('current_job_type', 'WEBディレクション系'); ?>>WEBディレクション系</option>
+        <option value="クリエイティブ" <?php echo set_select('current_job_type', 'クリエイティブ'); ?>>クリエイティブ</option>
+        <option value="WEBエンジニア（マークアップ・Flash）" <?php echo set_select('current_job_type', 'WEBエンジニア（マークアップ・Flash）'); ?>>WEBエンジニア（マークアップ・Flash）</option>
+        <option value="アプリケーション/システム開発（オープン系）" <?php echo set_select('current_job_type', 'アプリケーション/システム開発（オープン系）'); ?>>アプリケーション/システム開発（オープン系）</option>
+        <option value="アプリケーション/システム開発（組込・汎用・制御系）" <?php echo set_select('current_job_type', 'アプリケーション/システム開発（組込・汎用・制御系）'); ?>>アプリケーション/システム開発（組込・汎用・制御系）</option>
+        <option value="インフラ/ネットワーク/DB系エンジニア" <?php echo set_select('current_job_type', 'インフラ/ネットワーク/DB系エンジニア'); ?>>インフラ/ネットワーク/DB系エンジニア</option>
+        <option value="社内SE" <?php echo set_select('current_job_type', '社内SE'); ?>>社内SE</option>
+        <option value="ITその他" <?php echo set_select('current_job_type', 'ITその他'); ?>>ITその他</option>
+    </optgroup>
+    <optgroup label="メーカー系エンジニア職種">
+        <option value="研究開発（メーカー系）" <?php echo set_select('current_job_type', '研究開発（メーカー系）'); ?>>研究開発（メーカー系）</option>
+        <option value="回路設計" <?php echo set_select('current_job_type', '回路設計'); ?>>回路設計</option>
+        <option value="設計（その他）" <?php echo set_select('current_job_type', '設計（その他）'); ?>>設計（その他）</option>
+        <option value="評価・解析" <?php echo set_select('current_job_type', '評価・解析'); ?>>評価・解析</option>
+        <option value="プロセス開発・製造技術" <?php echo set_select('current_job_type', 'プロセス開発・製造技術'); ?>>プロセス開発・製造技術</option>
+        <option value="生産管理・品質管理・品質保証" <?php echo set_select('current_job_type', '生産管理・品質管理・品質保証'); ?>>生産管理・品質管理・品質保証</option>
+        <option value="セールスエンジニア" <?php echo set_select('current_job_type', 'セールスエンジニア'); ?>>セールスエンジニア</option>
+        <option value="FAE・技術サポートエンジニア" <?php echo set_select('current_job_type', 'FAE・技術サポートエンジニア'); ?>>FAE・技術サポートエンジニア</option>
+        <option value="購買・資材調達" <?php echo set_select('current_job_type', '購買・資材調達'); ?>>購買・資材調達</option>
+    </optgroup>
+    <optgroup label="メディカル系職種">
+        <option value="研究開発（メディカル）" <?php echo set_select('current_job_type', '研究開発（メディカル）'); ?>>研究開発（メディカル）</option>
+        <option value="臨床開発（医薬品）" <?php echo set_select('current_job_type', '臨床開発（医薬品）'); ?>>臨床開発（医薬品）</option>
+        <option value="臨床開発（医療機器）" <?php echo set_select('current_job_type', '臨床開発（医療機器）'); ?>>臨床開発（医療機器）</option>
+        <option value="マーケティング（メディカル）"  <?php echo set_select('マーケティング（メディカル）'); ?>>マーケティング（メディカル）</option>
+        <option value="医師・看護師・薬剤師・検査技師" <?php echo set_select('医師・看護師・薬剤師・検査技師'); ?>>医師・看護師・薬剤師・検査技師</option>
+        <option value="メディカルその他" <?php echo set_select('current_job_type', 'メディカルその他'); ?>>メディカルその他</option>
+    </optgroup>
+    <optgroup label="金融・不動産系職種">
+        <option value="金融専門職" <?php echo set_select('current_job_type', '金融専門職'); ?>>金融専門職</option>
+        <option value="金融バック・ミドルオフィス" <?php echo set_select('current_job_type', '金融バック・ミドルオフィス'); ?>>金融バック・ミドルオフィス</option>
+        <option value="不動産専門職" <?php echo set_select('current_job_type', '不動産専門職'); ?>>不動産専門職</option>
+        <option value="不動産技術職" <?php echo set_select('current_job_type', '不動産技術職'); ?>>不動産技術職</option>
+    </optgroup>
+    <optgroup label="コンサルタント">
+        <option value="コンサルタント" <?php echo set_select('current_job_type', 'コンサルタント'); ?>>コンサルタント</option>
+    </optgroup>
+    <optgroup label="その他">
+        <option value="経営層・エグゼクティブ" <?php echo set_select('current_job_type', '経営層・エグゼクティブ'); ?>>経営層・エグゼクティブ</option>
+        <option value="小売・流通・店舗系職種" <?php echo set_select('current_job_type', '小売・流通・店舗系職種'); ?>>小売・流通・店舗系職種</option>
+        <option value="物流関連職" <?php echo set_select('current_job_type', '物流関連職'); ?>>物流関連職</option>
+        <option value="デザイナー【WEB以外】" <?php echo set_select('current_job_type', 'デザイナー【WEB以外】'); ?>>デザイナー【WEB以外】</option>
+        <option value="その他" <?php echo set_select('current_job_type', 'その他'); ?>>その他</option>
+    </optgroup>
+</select><Br>
+<?php echo form_error('current_job_type');?></td>
+</tr>
+
+<tr class="mail01">
+<th>メールアドレス<span>（必須）</span></th>
+<td>  <?php echo form_input(array('name'=>'email','value'=>set_value('email'))); ?><Br>
+<?php echo form_error('email');?></td>
+</tr>
+
+<tr class="mail02">
+<th>メールアドレス：確認用<span>（必須）</span></th>
+<td><?php echo form_input(array('name'=>'re-email','value'=>set_value('re-email'))); ?><br>
+<?php echo form_error('re-email');?></td>
+</tr>
+
+<tr class="dm">
+<th>キャリア情報メール<span>（任意）</span></th>
+<td><label><input type="checkbox" name="newsletter" value="1" > 購読する</label><br>ワイルドカード株式会社ではご登録の皆様にキャリアアップに有益な情報を配信しております。<br>ぜひご購読ください。</td>
+</tr>
+</table>
+<!-- /table --></div>
+<footer>
+<p class="register"><button type="submit">上記内容で登録する</button></p>
+</footer>
+<!-- </form> -->
+<?php echo form_close(); ?>
+<!-- /contents --></div>
+<p class="footerlogo"><a href="http://www.2chopo.com/" target="_blank"><img src="<?php echo base_url().'static/pc/images/logo_nichopo.png'?>" alt=""></a></p>
+</body>
+</html>
