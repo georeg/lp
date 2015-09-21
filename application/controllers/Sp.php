@@ -42,6 +42,19 @@ class sp extends CI_Controller
             $this->load->Model('Logic_user_sp');
             $res = $this->Logic_user_sp->register_user($data);
             
+            //SEND EMAIL
+            $this->load->library('email');
+
+                $this->email->from('jazttijaztti@yahoo.co.jp', 'Your Name');
+                $this->email->to('jazttijaztti@yahoo.co.jp');
+                $this->email->cc('f.yuya.yamamoto@gmail.com');
+                $this->email->bcc('jazttijaztti@yahoo.co.jp');
+
+                $this->email->subject('Email Test');
+                $this->email->message('Testing the email class.');
+
+                $this->email->send();
+                
             //TRANSITION TO THANK YOU PAGE
             $this->load->view('sp/thankyou');
             }
