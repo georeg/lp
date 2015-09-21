@@ -8,6 +8,7 @@ class sp extends CI_Controller
         parent::__construct();
         $this->load->helper('form');
         $this->load->helper('url');
+        $this->config->load('email_config',TRUE);
     }
     
     public function lp()
@@ -44,9 +45,11 @@ class sp extends CI_Controller
             
             //SEND EMAIL
             $this->load->library('email');
-
+            $domain = $_SERVER['SERVER_NAME'];
+            $to = $this->config->item('email_config');
+            
                 $this->email->from('jazttijaztti@yahoo.co.jp', 'Your Name');
-                $this->email->to('jazttijaztti@yahoo.co.jp');
+                $this->email->to($to['to'][$domain]);
                 $this->email->cc('f.yuya.yamamoto@gmail.com');
                 $this->email->bcc('jazttijaztti@yahoo.co.jp');
 
